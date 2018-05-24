@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Security-Policy" content="default-src * atom://*; img-src blob: data: * atom://*; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src blob: data: mediastream: * atom://*;">
-  <script src="index.js"></script>
+  <link type="text/css" rel="stylesheet" href="./test.css">
+  <!-- <link type="text/css" rel="stylesheet" href="../atom-dark-ui/dark.css">-->
 </head>
-<body tabindex="-1">
+<body class='atom-workspace'>
+  <div >
+    <input class='input-text' type='text' placeholder='Text'>
+    <div class='block'>
+        <label>You might want to type something here.</label>
+        <atom-text-editor mini>Something you typed...</atom-text-editor>
+      </div>
+      <div class='block'>
+        <label class='icon icon-file-directory'>Another field with an icon</label>
+        <atom-text-editor mini>Something else you typed...</atom-text-editor>
+      </div>
+      <div class='block'>
+        <button class='btn'>Do it</button>
+      </div>
+  </div>
 </body>
 </html>
